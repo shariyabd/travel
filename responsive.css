@@ -1,0 +1,380 @@
+/*===================================
+ navbar section start here 
+===================================== */
+@media screen and (max-width:950px){
+    header nav .nav-item{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100vh;
+        background-color: black;
+        padding-top: 50px;
+        text-align: center;
+    }
+    header nav .nav-item.active{
+        transition: .5s ;
+        left: 0;
+    }
+    header nav .nav-item li{
+        padding: 15px 15px;
+        display:block;
+    }
+    header nav .nav-item li a{
+        display: block;
+    }
+    header nav .nav-item li:hover{
+        transition: .5s ease;
+        background-color: #156aeab5;
+    }
+    header nav .side-bar{
+        cursor: pointer;
+        display: block;
+    }
+     header nav .side-bar  i.active::before{
+        content: "\f00d";
+    }
+}
+@media screen and (max-width:550px){
+    header nav{
+        padding: 20px 20px;
+    }
+    header nav .logo h1{
+        font-size: 30px;
+    }
+    header nav .logo i{
+        font-size: 30px;
+    }
+    header nav .side-bar{
+        color: #23B3E3;
+        font-size: 25px;
+    }
+    
+}
+/*===========================
+ navbar section end here 
+============================ */
+
+
+
+
+
+
+
+
+/* ================================
+header home section start here 
+==================================== */
+@media screen and (max-width:600px){
+    header .home-section .home-text{
+        text-align: center;
+        padding: 150px 10px 30px 10px;
+    }
+    header .home-section .home-text h2{
+        font-size: 40px;
+
+    }
+   
+    header .home-section .home-text p{
+        font-size: 20px;
+        letter-spacing: normal;
+    }
+    header .home-section .home-text button{
+        padding: 10px 25px;
+        font-size: 20px;
+
+    }
+ 
+}
+/* ================================
+header home section end here 
+==================================== */
+
+
+
+
+
+
+
+
+
+/*=================================
+ services section start here 
+================================== */
+@media screen and (max-width:750px){
+    .services-section{
+        padding: 100px 40px 50px 40px;
+    }
+    .services-section .services-body .services-item{
+        width: 45%;
+    }
+}
+@media screen and (max-width:550px){
+    
+    .services-section{
+        padding: 100px 10px 50px 10px;
+    }
+    .services-section .services-head{
+        width: 100%;
+    }
+    .services-section .services-head h1{
+        font-size: 35px;
+    }
+    .services-section .services-body .services-item{
+        width: 95%;
+    }
+    .services-section .services-body .services-item i{
+        font-size: 45px;
+    }
+    .services-section .services-body .services-item h3{
+        font-size: 30px;
+    }
+    .services-section .services-body .services-item p{
+        font-size: 17px;
+    }
+}
+
+/*=================================
+ services section end here 
+================================== */
+
+
+
+
+
+
+
+
+/*===================================
+ packeges section start here 
+=================================== */
+@media screen and (max-width:850px){
+    .packeges-section{
+        padding: 10px 40px;
+    }
+    .packeges-section .packeges-body .packeges-item{
+        width: 45%;
+     
+    }
+}
+
+@media screen and (max-width:550px){
+    .packeges-section .packeges-head{
+        width: 100%;
+    }
+    .packeges-section .packeges-head h1{
+        font-size: 35px;
+       
+    }
+    .packeges-section{
+        padding: 10px 10px;
+    }
+    .packeges-section .packeges-body .packeges-item{
+        width: 95%;
+     
+    }
+    .packeges-section .packeges-body .packeges-item .packeges-text button{
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+}
+
+
+/*===================================
+ packeges section end here 
+=================================== */
+
+
+
+
+
+
+
+
+
+
+/*===============================
+ review section start here 
+================================ */
+@media screen and (max-width:750px){
+    .review-section{
+        padding: 60px 20px;
+    }
+    .review-section .review-body .review-item{
+        width: 100%;
+        margin-top: 70px;
+    }
+    .review-section .review-body .review-item .review-img{
+        width: 25%;
+    }
+}
+@media screen and (max-width:550px){
+    .review-section .review-head{
+        width: 100%;
+    }
+    .review-section .review-head h1{
+        font-size: 35px;
+    }
+}
+/*===============================
+ review section end here 
+================================ */
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========================
+ gallery section start here 
+========================== */
+@media screen and (max-width:800px){
+    .gallery-section{
+        padding: 60px 20px;
+    }
+    .gallery-section .gallery-body .gallery-item{
+        width: 45%;
+    
+    }
+}
+@media screen and (max-width:550px){
+    .gallery-section .gallery-body .gallery-item{
+        width: 95%;
+    
+    }
+    .gallery-section .gallery-head{
+        width: 100%;
+    }
+    .gallery-section .gallery-head h1{
+        font-size: 35px;
+    }
+    .gallery-section .gallery-body .gallery-item .garllery-text h1{
+        font-size: 25px;
+    }
+    .gallery-section .gallery-body .gallery-item .garllery-text p{
+        font-size: 15px;
+    }
+    .gallery-section .gallery-body .gallery-item .garllery-text button{
+        font-size: 15px;
+        padding: 10px 15px;
+        background-color: #6AB42B;
+    }
+}
+/*===========================
+ gallery section end here 
+========================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================
+ attachment section start here 
+=========================== */
+
+@media screen and (max-width:600px){
+    .attashment{
+        padding: 60px 20px 120px 20px;
+  
+    }
+    .attashment .attashment-head h1{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .attashment .attashment-head p{
+        font-size: 18px;
+    }
+}
+/*=============================
+ attachment section end here 
+=========================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================
+ contact section start here 
+================================== */
+@media screen and (max-width:900px) {
+    .contact-section .contact-body .contact-img{
+        width: 100%;
+      
+    }
+    .contact-section .contact-body .contact-form{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:550px){
+    .contact-section{
+        padding: 80px 20px;
+    }
+    .contact-section .contact-head{
+        width: 100%;
+    }
+    .contact-section .contact-head h1{
+        font-size: 35px;
+    }
+    .contact-section .contact-body .contact-img{
+        width: 100%;
+        
+    }
+  
+}
+/*================================
+ contact section end here 
+================================== */
+
+
+
+
+
+
+
+
+/*==================================
+ footer section start here 
+=================================== */
+
+@media screen and (max-width:750px){
+    .footer-section{
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .footer-section .footer-body .footer-item{
+        width: 45%;
+    }
+}
+@media screen and (max-width:550px){
+    .footer-section .footer-body .footer-item{
+        width: 95%;
+    }
+    .footer-section .footer-body .footer-item h1{
+        font-size: 30px;
+    }
+}
+/*==================================
+ footer section end here 
+=================================== */

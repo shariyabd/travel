@@ -1,0 +1,696 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*=================================
+ header section start here 
+================================== */
+header{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+/*=================================
+ navbar section start here 
+==================================== */
+header nav{
+    width: 100%;
+    height: 80px;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transition: 1s all ease;
+    z-index: 9999;
+}
+.bg-color{
+    background-color: #156AEA;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+header nav .logo h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: #23B3E3;
+}
+header nav .logo i{
+    font-size: 35px;
+    color: #23B3E3;
+}
+
+header nav .nav-item li{
+    display: inline-flex;
+    padding: 10px 15px;
+}
+header nav .nav-item li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color:  #23B3E3;
+}
+header nav .nav-item li a:hover{
+    color: #8aeb34;
+    font-size: 21px;
+    transition: .3s;
+}
+header nav .side-bar{
+    color: #23B3E3;
+    font-size: 30px;
+    padding: 10px 20px;
+    display: none;
+}
+
+/*=================================
+ navbar section end here 
+==================================== */
+
+
+
+
+
+
+
+
+
+
+/*==========================
+ home section start here 
+========================== */
+header .home-section{
+    width: 100%;
+    
+}
+header .home-section .home-text{
+    text-align: center;
+    padding: 190px 20px 30px 20px;
+}
+header .home-section .home-text h2{
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+	animation-name: word;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate-rever .5s;
+	
+}
+header .home-section .home-text p{
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: white;
+    padding-top: 5px;
+    font-weight: bold;
+  
+}
+header .home-section .home-text h2:hover{
+    animation-play-state: paused;
+}
+@keyframes word{
+	0%{
+		color: #23B3E3;
+		transition: 6s;
+	}
+	25%{
+        color: #156AEA;
+        transition: 5s;
+	}
+	50%{
+		color: #6AB42B;
+		transition: 4s;
+	}
+	75%{
+        color: #2F6F11;
+        transition: 7s;
+	}
+    100%{
+        color: #01CFD1;
+        transition: 7s;
+	}
+}
+
+header .home-section .home-text button{
+    position: relative;
+    color: black;
+    padding: 15px 30px;
+    background-color: #23B3E3;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 25px;
+    z-index: 1;
+    outline: none;
+    border: none;
+}
+header .home-section .home-text button::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: #156AEA;;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+header .home-section .home-text button:hover::before{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+header .home-section .home-video video{
+    position: absolute;
+	left: 0;
+	top: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: -1;
+   
+}
+/*==========================
+ home section end here 
+========================== */
+
+/*=================================
+ header section end here 
+================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================
+ service section start here 
+============================= */
+.services-section{
+    width: 100%;
+    height: auto;
+    padding: 100px 40px 50px 40px;
+}
+.services-section .services-head{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.services-section .services-head h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+.services-section .services-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.services-section .services-body .services-item{
+    width: 30%;
+    padding: 30px 20px;
+    margin: 15px 0px;
+    text-align: center;
+    box-shadow: 2px 3px 16px rgba(0, 0, 0, 0.188);
+}
+.services-section .services-body .services-item:hover{
+    border-top: 5px solid #6AB42B;
+}
+.services-section .services-body .services-item i{
+    font-size: 55px;
+    color: #23B3E3;
+    padding: 10px 0px;
+}
+.services-section .services-body .services-item h3{
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #156AEA;
+}
+.services-section .services-body .services-item p{
+    font-size: 20px;
+    line-height: 28px;
+    color: gray;
+   
+}
+
+/*=============================
+ service section end here 
+============================= */
+
+
+
+
+
+
+
+
+
+
+
+/*=============================
+ packages section start here 
+============================= */
+.packeges-section{
+    width: 100%;
+    height: auto;
+    padding: 10px 80px;
+}
+
+.packeges-section .packeges-head{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+.packeges-section .packeges-head h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.packeges-section .packeges-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.packeges-section .packeges-body .packeges-item{
+    width: 30%;
+    background-color: white;
+    margin: 10px 0px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.267);
+}
+.packeges-section .packeges-body .packeges-item img{
+    width: 100%;
+}
+.packeges-section .packeges-body .packeges-item .packeges-text{
+    text-align: left;
+    padding: 20px 15px;
+
+}
+.packeges-section .packeges-body .packeges-item .packeges-text h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.packeges-section .packeges-body .packeges-item .packeges-text p{
+    line-height: 22px;
+    padding: 5px 0px;
+}
+.packeges-section .packeges-body .packeges-item .packeges-text i{
+    color: #23B3E3;
+}
+.packeges-section .packeges-body .packeges-item .packeges-text del{
+    font-size: 15px;
+}
+.packeges-section .packeges-body .packeges-item .packeges-text h3{
+    font-size: 25px;
+    padding-bottom: 8px;
+}
+.packeges-section .packeges-body .packeges-item .packeges-text button{
+    border: none;
+    outline: none;
+    background-color: #6AB42B;
+    padding: 10px 20px;
+    color: white;
+    font-size: 25px;
+}
+/*=============================
+ packages section end here 
+============================= */
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================
+ review section start here 
+============================= */
+.review-section{
+    width: 100%;
+    height: auto;
+    padding: 60px 80px;
+}
+.review-section .review-head{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+.review-section .review-head h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.review-section .review-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+.review-section .review-body .review-item{
+    width: 30%;
+    padding: 20px 0px;
+    margin: 10px 0px;
+    background-color: whitesmoke;
+    transition: 0.5s all ease;
+}
+.review-section .review-body .review-item:hover{
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.267);
+}
+.review-section .review-body .review-item .review-img{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: -80px;
+}
+.review-section .review-body .review-item .review-img img{
+    border-radius: 50%;
+    width: 100%;
+
+   
+}
+
+.review-section .review-body .review-item .review-text{
+    text-align: center;
+    padding: 15px 10px;
+}
+.review-section .review-body .review-item .review-text i{
+    font-size: 25px;
+    padding: 10px 0px;
+    color: #23B3E3;
+}
+.review-section .review-body .review-item .review-text h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.review-section .review-body .review-item .review-text p{
+    line-height: 22px;
+    font-size: 19px;
+    padding: 5px 0px;
+}
+/*============================
+ review section end here 
+============================= */
+
+
+
+
+
+
+
+
+
+
+
+/*================================
+ gallery section start here 
+=============================== */
+.gallery-section{
+    width: 100%;
+    height: auto;
+    padding: 60px 80px;
+}
+.gallery-section .gallery-head{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+.gallery-section .gallery-head h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.gallery-section .gallery-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery-section .gallery-body .gallery-item{
+    width: 30%;
+    height: 300px;
+    position: relative;
+    margin: 10px 10px;
+    overflow: hidden;
+}
+.gallery-section .gallery-body .gallery-item img{
+    width: 100%;
+    height: 100%;
+    
+}
+.gallery-section .gallery-body .gallery-item .garllery-text{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.323);
+    padding: 15px 5px;
+    color: #8aeb34;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    transition: 0.6s all ease;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.gallery-section .gallery-body .gallery-item:hover .garllery-text{
+    transform: translateY(-80px);
+    visibility: visible;
+    opacity: 1;
+}
+.gallery-section .gallery-body .gallery-item:hover .garllery-text button{
+    transform: scale(1.3);
+    transition: 1s;
+}
+.gallery-section .gallery-body .gallery-item .garllery-text h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.gallery-section .gallery-body .gallery-item .garllery-text p{
+    line-height: 22px;
+    font-size: 19px;
+    padding-bottom: 10px;
+}
+.gallery-section .gallery-body .gallery-item .garllery-text button{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: #6AB42B;
+}
+
+/*================================
+ gallery section end here 
+=============================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========================
+ attashment section start here 
+=========================== */
+.attashment{
+    width: 100%;
+    height: auto;
+    padding: 60px 40px 120px 40px;
+    background: url('img/portitei.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.attashment .attashment-head{
+    text-align: center;
+    padding: 30px 0px;
+}
+.attashment .attashment-head h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.attashment .attashment-head p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.attashment .attashment-body{
+    width: 80%;
+    margin: 0 auto;
+}
+/*==========================
+ attashment section end here 
+=========================== */
+
+
+
+
+
+
+
+
+
+
+
+/*==========================
+ contact section start here 
+============================ */
+.contact-section{
+    width: 100%;
+    height: auto;
+    padding: 80px 80px;
+}
+.contact-section .contact-head{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 10px;
+}
+.contact-section .contact-head h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.contact-section .contact-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-section .contact-body .contact-img{
+    width: 45%;
+    padding: 20px 15px;
+}
+.contact-section .contact-body .contact-img img{
+    width: 100%;
+}
+.contact-section .contact-body .contact-form{
+    width: 45%;
+    padding: 40px 40px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.267);
+    border-radius: 20px;
+}
+.contact-section .contact-body .contact-form form input{
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.125);
+    border-radius: 40px;
+}
+
+.contact-section .contact-body .contact-form form textarea{
+    width: 100%;
+    height: 80px;
+    padding: 15px;
+    margin: 5px;
+}
+.contact-section .contact-body .contact-form form .btn{
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(224, 142, 0);
+    transition: 0.5s;
+   
+}
+.contact-section .contact-body .contact-form form .btn:hover{
+    outline: 2px solid  rgb(224, 142, 0);
+    background-color: white;
+    color:  rgb(224, 142, 0);
+}
+
+/*==========================
+ contact section end here 
+============================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================
+ footer section start here 
+=============================== */
+.footer-section{
+    width: 100%;
+    padding: 40px 80px;
+    background-color: #23B3E3;
+}
+.footer-section .footer-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer-section .footer-body .footer-item{
+    width: 30%;
+    padding: 20px 20px;
+    color: white;
+}
+.footer-section .footer-body .footer-item h1{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px 0px;
+    color: white;
+}
+.footer-section .footer-body .footer-item p{
+    padding: 5px 0px;
+    font-size: 20px;
+}
+.footer-section .footer-body .footer-item p:hover{
+    color: #8aeb34;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: .5s;
+}
+.footer-section .copy-right{
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+/*=============================
+ footer section end here 
+=============================== */
